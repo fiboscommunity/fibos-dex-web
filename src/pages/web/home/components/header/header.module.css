@@ -1,0 +1,393 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+  background: var(--middle-dark-color);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s linear, ease;
+}
+
+.mini {
+  height: 40px;
+}
+
+.content {
+  width: 100%;
+  height: 80px;
+  margin: 0px auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.mini .content {
+  height: 40px;
+}
+
+.abs {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.7);
+  filter: Alpha(Opacity=70);
+  z-index: 2;
+  overflow-x: auto;
+}
+
+.headEleWrapper {
+  display: flex;
+}
+
+.leftWrapper {
+  composes: headEleWrapper;
+  transition: all 0.2s linear, ease;
+}
+
+.rightWrapper {
+  display: flex;
+  height: 100%;
+  transition: all 0.2s linear, ease;
+}
+
+.addonLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 40px;
+  border-left: 1px solid var(--border-menu-border-black-color);
+}
+
+.addonLink > a {
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.addonLink.opened > a {
+  color: var(--white-color);
+}
+
+.logoWrapper {
+  height: 100%;
+  display: flex;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.2s linear, ease;
+}
+
+.logo {
+  width: 180px;
+  width: auto;
+  height: 40px;
+  margin: auto;
+}
+
+.logo {
+  margin: auto 20px;
+}
+
+.menuWrapper {
+  background-color: transparent;
+  opacity: 1;
+  transition: all 0.2s linear, ease;
+}
+
+.menu {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.menu :global(.ant-menu-item) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 1px solid var(--border-menu-border-black-color);
+  border-right: 1px solid var(--border-menu-border-black-color);
+}
+
+.menutext {
+  font-size: 16px;
+  color: var(--blue-color) !important;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.linkstext {
+  composes: menutext;
+  margin: 0;
+  padding: 0 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 1px solid var(--border-menu-border-black-color);
+}
+
+.bannerWrapper {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  overflow: hidden;
+  background: var(--real-black-color);
+}
+
+.bannerLeft {
+  width: 464px;
+  height: 580px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bannerText {
+  width: 825px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  z-index: 2;
+}
+
+.bannerRight {
+  width: 464px;
+  height: 580px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.announcementWrapper {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0px;
+  background: rgba(241, 239, 239, 0.3);
+}
+
+.announcementContent {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.announcement {
+  flex: 1;
+  font-size: 20px;
+  color: var(--white-color);
+  text-align: center;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0px 20px;
+  line-height: 45px;
+}
+
+.announcement > a {
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+  color: var(--white-color);
+}
+
+.loginWrapper {
+  min-width: 221px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  border-left: 1px solid var(--border-menu-border-black-color);
+  transition: all 0.2s linear, ease;
+}
+
+.loginContent {
+  margin: auto;
+  display: flex;
+}
+
+.account {
+  font-size: 16px;
+  color: var(--white-color);
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.btn {
+  height: 26px;
+  padding: 0px 9px;
+  margin: 0px;
+}
+
+.logout {
+  composes: btn;
+  margin-left: 10px;
+}
+
+.login {
+  composes: btn;
+}
+
+.linksWrapper {
+}
+
+.linksText {
+}
+
+.linksMenu {
+}
+
+.linksMenuItem {
+}
+
+.floatMenuWrapper {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  z-index: 1000;
+  min-width: 36px;
+  transition: all 0.3s ease-in-out;
+}
+
+.floatMenuWrapper.open {
+  width: auto;
+}
+
+.floatMenuWrapper.close {
+  width: 36px;
+}
+
+.logoBtnWrapper {
+  width: 36px;
+  width: 298px;
+  height: 36px;
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: var(--white-color);
+  box-shadow: 0 2px 2px 0 var(--float-menu-shadow-color);
+  border-radius: 3px;
+}
+
+.floatMenuBtn {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+
+.logoBtnContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.aniArrowsWrapper {
+  position: absolute;
+  right: 0px;
+}
+
+.logoBtn {
+  composes: floatMenuBtn;
+}
+
+.closeBtn {
+  composes: floatMenuBtn;
+  color: var(--blue-color);
+  font-size: 24px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.floatMenuContentWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 3px 10px 4px 298px;
+  background-color: var(--float-menu-backgorund-color);
+  box-shadow: 0 2px 2px 0 var(--float-menu-shadow-color);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+}
+
+.floatMenu {
+}
+
+.floatMenu:global(.ant-menu) {
+  background-color: transparent;
+  line-height: 26px;
+  margin: 0px 10px;
+}
+
+.floatMenu :global(.ant-menu-item) {
+  min-width: 110px;
+  text-align: center;
+}
+
+.floatMenu .linkstext {
+  border: none;
+}
+
+.floatMenuContentWrapper .linksMenu {
+  padding: 0px 0px 0px 24px;
+}
+
+.floatMenuContentWrapper .account {
+  color: var(--black-color);
+  margin-left: 10px;
+  line-height: 28px;
+}
+
+.pluginWrapper {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  z-index: 1000;
+  min-width: 36px;
+  transition: all 0.3s ease-in-out;
+  width: 265px;
+  height: 32px;
+  margin-bottom: 4px;
+  display: flex;
+  background: var(--darker-dark-color);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.pluginWrapper .loginContent {
+  display: flex;
+}
+
+.pluginWrapper .account {
+  padding: 3px 20px;
+}
+
+.pluginWrapper .logout {
+  padding: 3px 0px;
+  margin: auto 0px;
+  width: 32px;
+}
+
+.pluginWrapper .login {
+  width: 265px;
+  border: none;
+  padding: 3px 0px;
+}
+
+.pluginWrapper :global([ant-click-animating-without-extra-node='true']::after) {
+  box-shadow: 0 0 0 0 var(--middle-dark-color);
+}

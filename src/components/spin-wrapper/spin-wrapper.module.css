@@ -1,0 +1,7 @@
+.spinContainer,
+.spinContainer > :global(.ant-spin-nested-loading),
+.spinContainer > :global(.ant-spin-nested-loading) > :global(.ant-spin-container) {
+	display: flex;
+	flex: auto;
+	width: 100%;
+}

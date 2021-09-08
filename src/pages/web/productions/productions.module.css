@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  min-width: 1280px;
+  flex-direction: column;
+  padding: 25px 11px 25px 11px;
+}
+
+.content {
+  width: 100%;
+  background: var(--card-black-backgorund-color);
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.07);
+}

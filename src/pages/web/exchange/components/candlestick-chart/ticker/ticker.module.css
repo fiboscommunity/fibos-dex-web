@@ -1,0 +1,99 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  padding: 15px 32px 4px 12px;
+}
+
+.content {
+  /*background: greenyellow;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+
+div.content dl {
+  font-size: 12px;
+  color: var(--text-white-color);
+  letter-spacing: 0;
+  text-align: center;
+}
+
+div.content dt {
+  font-size: 12px;
+  color: var(--darker-grey-color);
+  letter-spacing: 0;
+}
+
+div.content dd {
+  font-size: 14px;
+  color: var(--text-white-color);
+  letter-spacing: 0;
+}
+
+div.content .color_up {
+  font-size: 14px;
+  color: var(--green-color);
+  letter-spacing: 0;
+  text-align: right;
+}
+
+div.content .color_down {
+  font-size: 14px;
+  color: var(--red-color);
+  letter-spacing: 0;
+  text-align: right;
+}
+
+.symbol_name {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+.symbolNameTip {
+  min-width: 180px;
+}
+
+.symbola {
+  font-size: 14px;
+  color: var(--text-white-color);
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.symbolb {
+  font-size: 12px;
+  color: var(--ticker-grey-color);
+  letter-spacing: 0;
+  line-height: 17px;
+}
+
+.text {
+  color: var(--black-color);
+  margin: 10px 0px;
+}
+
+.tipWrapper {
+  composes: text;
+  width: 200px;
+}
+
+.tipTitle {
+  composes: text;
+  font-size: 14px;
+}
+
+.tipContent {
+  composes: text;
+  font-size: 12px;
+  color: var(--normal-grey-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tipLink {
+  composes: text;
+}

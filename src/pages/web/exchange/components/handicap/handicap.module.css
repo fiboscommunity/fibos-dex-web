@@ -1,0 +1,173 @@
+.wrapper {
+  width: 265px;
+  height: 100%;
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 752px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  height: 752px;
+  display: flex;
+  flex-direction: column;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+.onlySell {
+  margin-top: 2px;
+}
+
+.sellAndBuy {
+  margin-top: -360px;
+}
+
+.onlyBuy {
+  margin-top: -720px;
+}
+
+.contentRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.contentRow:hover {
+  background: var(--table-black-backgorund-color);
+}
+
+.tipRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  flex-direction: column;
+}
+
+.rowText {
+  margin: 5px 0px;
+  color: var(--text-white-color);
+}
+
+.contentRow .rowText {
+  width: 33%;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.titleWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.titleHead {
+  composes: rowText;
+  width: 33%;
+  text-align: left !important;
+}
+
+.titleBody {
+  composes: rowText;
+  width: 33%;
+  padding-right: 5px;
+  text-align: right !important;
+}
+
+.titleTail {
+  composes: rowText;
+  width: 33%;
+  text-align: right !important;
+}
+
+.rowColorBg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 100%;
+  opacity: 0.1;
+  background-color: transparent;
+}
+
+.rowPrice {
+  composes: rowText;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: left !important;
+  margin: 0px;
+}
+
+.rowAmount {
+  composes: rowText;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0px;
+  padding-right: 5px;
+}
+
+.rowAdded {
+  composes: rowText;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0px;
+}
+
+.lastPrice {
+  composes: rowText;
+}
+
+.contentRow .lastPrice {
+  width: 100%;
+  height: 32px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+  margin: 0px;
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 0 rgba(0, 0, 0, 0.5);
+  /* transition: color 1s ease-in-out; */
+}
+
+/* spinning */
+.wrapper :global(.ant-spin-blur) {
+  opacity: 0.2;
+}
+
+.typeRow {
+  display: flex;
+  padding: 9px 17px 9px 10px;
+}
+
+.type {
+  margin-right: 10px;
+}
+
+.typeImg {
+  width: 16px;
+  height: 18px;
+}
+
+.buy {
+  font-style: normal;
+  color: var(--green-color);
+}
+
+.sell {
+  font-style: normal;
+  color: var(--red-color);
+}

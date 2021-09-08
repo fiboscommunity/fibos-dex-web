@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  background-color: var(--mobile-grey-color);
+}

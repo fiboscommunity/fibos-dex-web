@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(69, 125, 255, 0.1);
+  height: 38px;
+}
+
+.text {
+  border-left: 2px solid var(--blue-color);
+  font-size: 15px;
+  color: var(--real-black-color);
+  padding-left: 14px;
+  letter-spacing: 0;
+}

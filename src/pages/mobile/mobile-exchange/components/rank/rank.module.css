@@ -1,0 +1,182 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--mobile-white-color);
+  margin-bottom: 10px;
+  padding: 0px 15px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--mobile-darker-grey-color);
+}
+
+.contentRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rowText {
+  display: flex;
+  margin: 5px 0px;
+  text-align: left;
+  color: var(--mobile-black-color);
+}
+
+.rowTitleWrapper {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  padding: 5px 0px;
+  font-size: 15px;
+  color: var(--mobile-black-color);
+  border-bottom: 1px solid var(--mobile-darker-grey-color);
+}
+
+.totalWrapper {
+  composes: content;
+}
+
+.labelValueRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detailWrapper .labelValueRow:first-child,
+.totalWrapper .labelValueRow:first-child {
+  margin-top: 10px;
+}
+
+.labelValueRowText {
+  color: var(--mobile-black-color);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.label {
+  composes: labelValueRowText;
+  color: var(--mobile-table-text-grey-color);
+}
+
+.value {
+  composes: labelValueRowText;
+  text-align: right;
+}
+
+.rankWrapper {
+  composes: content;
+  min-height: 60px;
+}
+
+.titleWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  border-bottom: 1px solid var(--mobile-darker-grey-color);
+}
+
+.titleHead {
+  composes: rowText;
+  color: var(--mobile-table-text-grey-color);
+}
+
+.titleTail {
+  composes: rowText;
+  color: var(--mobile-table-text-grey-color);
+  margin-right: 27px;
+}
+
+.rowKey {
+  display: flex;
+}
+
+.rowKeyNo {
+  composes: rowText;
+  min-width: 36px;
+  font-size: 12px;
+  line-height: 17px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rowKeyName {
+  composes: rowText;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.rowValueWrapper {
+  display: flex;
+}
+
+.rowValue {
+  composes: rowText;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: right;
+}
+
+.detailWrapper {
+  composes: content;
+}
+
+.valueWithIcon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lockWrapper {
+  composes: content;
+}
+
+.myHoldExplanationWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.myHoldExplanation {
+  composes: rowText;
+  color: var(--mobile-table-text-grey-color);
+  margin: 0px;
+}
+
+.rowLock {
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch {
+  background-color: var(--switch-grey-color);
+  margin: 5px 0px;
+}
+
+.switch:global(.ant-switch-checked) {
+  background-color: var(--blue-color);
+}
+
+.statusTip {
+  composes: rowText;
+  margin-right: 20px;
+}
+
+/* spinning */
+.wrapper :global(.ant-spin-blur) {
+  opacity: 0.2;
+}

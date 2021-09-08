@@ -1,0 +1,202 @@
+.wrapper {
+  width: 298px;
+  height: 100%;
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 261px;
+  display: flex;
+  flex-direction: column;
+}
+
+.withTotal {
+  height: 292px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.contentRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rowText {
+  display: flex;
+  margin: 5px 0px;
+  text-align: left;
+  color: var(--text-white-color);
+}
+
+.titleWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleHead {
+  composes: rowText;
+  margin-left: 15px;
+}
+
+.titleTail {
+  composes: rowText;
+  margin-right: 42px;
+}
+
+.totalWrapper {
+  composes: content;
+  height: 261px;
+  padding: 10px 20px 10px 20px;
+}
+
+.totalRow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.totalLabel {
+  composes: rowText;
+}
+
+.totalLVal {
+  composes: rowText;
+}
+
+.rowKey {
+  display: flex;
+}
+
+.rowKeyNo {
+  composes: rowText;
+  min-width: 36px;
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rowKeyName {
+  composes: rowText;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.rowValueWrapper {
+  display: flex;
+}
+
+.rowValue {
+  composes: rowText;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: right;
+}
+
+.myWrapper {
+  composes: content;
+  height: 293px;
+  padding: 10px 20px 10px 20px;
+}
+
+.myHoldRowWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myHoldExplanationWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.myHoldExplanation {
+  composes: rowText;
+  color: var(--darker-grey-color);
+  margin: 0px;
+}
+
+.rowLock {
+  margin: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch {
+  background-color: var(--switch-grey-color);
+  margin: 5px 0px;
+}
+
+.switch:global(.ant-switch-checked) {
+  background-color: var(--blue-color);
+}
+
+.statusTip {
+  composes: rowText;
+  margin-right: 20px;
+}
+
+/* spinning */
+.wrapper :global(.ant-spin-blur) {
+  opacity: 0.2;
+}
+
+.menuWrapper {
+}
+
+.menu {
+  background-color: transparent;
+  line-height: 25px;
+}
+
+.menu:global(.ant-menu-horizontal) {
+  border: none;
+}
+
+.menu :global(.ant-menu-item) {
+  font-size: 14px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--blue-color);
+  border: none;
+  transition: border-color 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.menu :global(.ant-menu-item:hover),
+.menu :global(.ant-menu-item-active:hover) {
+  color: var(--text-white-color);
+  border-color: var(--border-menu-border-black-color);
+  border: none;
+}
+
+.menu :global(.ant-menu-item.ant-menu-item-selected) {
+  color: var(--text-white-color);
+  border: none;
+}
+
+.menu :global(.ant-menu-item),
+.menu :global(.ant-menu-item.ant-menu-item-selected),
+.menu :global(.ant-menu-item:hover),
+.menu :global(.ant-menu-item-active:hover) {
+  border-right: 1px solid var(--border-menu-border-black-color);
+}
+
+.menu > :global(.ant-menu-item:nth-child(2)) {
+  padding-left: 0px;
+}
+
+.menu > .lastMenuItem,
+.menu > .lastMenuItem:global(.ant-menu-item.ant-menu-item-selected),
+.menu > .lastMenuItem:global(.ant-menu-item:hover),
+.menu > .lastMenuItem:global(.ant-menu-item-active:hover) {
+  border-right: none;
+}

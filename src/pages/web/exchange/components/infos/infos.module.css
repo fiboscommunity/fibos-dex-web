@@ -1,0 +1,49 @@
+.wrapper {
+  width: 298px;
+  height: 100%;
+}
+
+.contentWrapper {
+  height: 293px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 5px 15px 5px 15px;
+}
+
+.spin {
+  height: 100%;
+}
+
+.contentRow {
+}
+
+.rowText {
+  display: flex;
+  margin: 3px 0px;
+  text-align: left;
+}
+
+.rowKey {
+  composes: rowText;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--ticker-grey-color);
+}
+
+.rowValue {
+  composes: rowText;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--text-white-color);
+}
+
+/* spinning */
+.wrapper :global(.ant-spin-blur) {
+  opacity: 0.2;
+}

@@ -1,0 +1,4 @@
+{
+	"presets": ["react-app", "@babel/react"],
+	"plugins": [["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }, "antd"], "@babel/plugin-syntax-dynamic-import"]
+}

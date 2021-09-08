@@ -1,0 +1,8 @@
+.wrapper {
+  margin: auto;
+}
+
+.img {
+  user-select: none;
+  pointer-events: none;
+}

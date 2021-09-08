@@ -1,0 +1,177 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.tableWrapper :global(.ant-spin-container) {
+  display: flex;
+  flex-direction: column;
+}
+
+/* table */
+
+.table {
+  border-radius: 0px;
+  border: none;
+}
+
+.table :global(.ant-table table) {
+  border-radius: 0px;
+}
+
+.table :global(.ant-table-thead) {
+  border-radius: 0px;
+}
+
+.table :global(.ant-table-thead > tr:first-child > th:first-child > span) {
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-thead > tr:first-child > th:first-child),
+.table :global(.ant-table-thead > tr:first-child > th:last-child) {
+  border-radius: 0px;
+  color: var(--mobile-table-text-grey-color);
+  background-color: var(--white-color);
+  z-index: 100;
+  position: relative;
+  border-bottom: 1px solid var(--mobile-darker-grey-color);
+}
+
+.table :global(tbody.ant-table-tbody > tr) {
+  background-color: var(--mobile-white-color);
+}
+
+.table :global(tbody.ant-table-tbody > tr:nth-child(odd)) {
+}
+
+.table :global(.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td) {
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-tbody > tr > td) {
+  height: 36px;
+  padding: 0px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  font-size: 14px;
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  font-size: 12px;
+}
+
+.table :global(.ant-table-thead > tr > th:first-child),
+.table :global(.ant-table-tbody > tr > td:first-child) {
+  text-align: left;
+}
+
+.table :global(table) {
+  table-layout: fixed;
+}
+
+.table
+  :global(.ant-table-thead
+    > tr
+    > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover) {
+}
+
+/* col width related */
+.table :global(.ant-table-tbody > tr > td) {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* no Data */
+.table :global(.ant-table-placeholder) {
+  border: none;
+}
+
+.table :global(.ant-table.ant-table-empty .ant-table-body) {
+}
+
+.table .noDataWrapper {
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.noDataWrapper .noDataImgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.noDataWrapper .noDataImg {
+  width: 84px;
+  height: 109px;
+}
+
+.noDataWrapper .noDataText {
+  margin: 20px 0px 30px 0px;
+}
+
+.pagination {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination :global(.ant-pagination-total-text),
+.pagination :global(.ant-pagination-item),
+.pagination :global(.ant-pagination-prev),
+.pagination :global(.ant-pagination-next),
+.pagination :global(.ant-pagination-jump-prev),
+.pagination :global(.ant-pagination-jump-next) {
+  min-width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+
+.pagination:global(.ant-pagination .ant-pagination-item a),
+.pagination:global(.ant-pagination .ant-pagination-prev a),
+.pagination:global(.ant-pagination .ant-pagination-next a),
+.pagination:global(.ant-pagination .ant-pagination-jump-prev a),
+.pagination:global(.ant-pagination .ant-pagination-jump-next a) {
+  padding: 0;
+  line-height: 16px;
+}
+
+.pagination
+  :global(.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon),
+.pagination
+  :global(.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon) {
+  font-size: 14px;
+  vertical-align: 0px;
+}
+
+.pagination
+  :global(.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis),
+.pagination
+  :global(.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis) {
+  font-size: 12px;
+}
+
+.pagination :global(.ant-pagination-total-text) {
+  color: var(--black-color);
+}
+
+/* spinning */
+.wrapper :global(.ant-spin-blur) {
+  opacity: 0.2;
+}

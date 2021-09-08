@@ -1,0 +1,217 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  display: block;
+  padding-bottom: 60px;
+  flex: 1;
+  background-color: var(--mobile-grey-color);
+}
+
+.contentRow {
+  width: 100%;
+  display: flex;
+  margin: 0px auto;
+  margin-bottom: 9px;
+}
+
+.menu:global(.ant-menu-horizontal) {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu:global(.ant-menu-horizontal > .ant-menu-item),
+.menu:global(.ant-menu-horizontal > .ant-menu-submenu) {
+  display: flex;
+  flex: 1;
+  max-width: 33%;
+  justify-content: space-around;
+}
+
+.actionWrapper {
+  width: 100%;
+  height: 60px;
+  min-height: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background: var(--mobile-white-color);
+  padding: 10px 0px;
+  box-shadow: 0px 2px 4px 4px #f2efff;
+  z-index: 999;
+  /* transition: height 0.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    max-height 0.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    min-height 0.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+}
+
+.content.withTradePanel .actionWrapper {
+  height: 60px;
+  min-height: 60px;
+}
+
+/* triangle */
+.btnsWrapper {
+  display: -webkit-box;
+}
+
+.btnsWrapper :global([ant-click-animating-without-extra-node='true']::after),
+.btnsWrapper :global(.ant-click-animating-node) {
+}
+
+.btn {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: var(--mobile-white-color);
+  padding: 0px 40px;
+}
+
+.btn:global(.ant-btn:hover),
+.btn:global(.ant-btn:focus),
+.btn:global(.ant-btn:active),
+.btn:global(.ant-btn.active) {
+  color: var(--mobile-white-color);
+}
+
+.buyOrSell {
+  display: block;
+  width: 66%;
+  padding: 0px 10px 0px 20px;
+}
+
+.buyOrSellOfFull {
+  width: 100%;
+}
+
+.holdBtnWrapper {
+  display: block;
+  width: 33%;
+  padding: 0px 20px 0px 10px;
+}
+
+.holdBtnWrapper .btn {
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.buyBtn {
+  composes: btn;
+  background: var(--mobile-trade-panel-green-color);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-right: 50px;
+}
+
+.buyBtn .triangle:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0px;
+  right: -20px;
+  border-width: 20px 20px 20px 20px;
+  border-style: solid;
+  border-color: var(--mobile-trade-panel-green-color) transparent transparent
+    var(--mobile-trade-panel-green-color);
+  z-index: 2;
+}
+
+.buyBtn:global(.ant-btn:hover),
+.buyBtn:global(.ant-btn:focus),
+.buyBtn:global(.ant-btn:active),
+.buyBtn:global(.ant-btn.active) {
+  background: var(--mobile-trade-panel-green-color);
+}
+
+.sellBtn {
+  composes: btn;
+  background: var(--mobile-trade-panel-red-color);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-left: 50px;
+}
+
+.sellBtn .triangle:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0px;
+  left: -20px;
+  border-width: 20px 20px 20px 20px;
+  border-style: solid;
+  border-color: transparent var(--mobile-trade-panel-red-color) var(--mobile-trade-panel-red-color)
+    transparent;
+  z-index: 2;
+}
+
+.sellBtn:global(.ant-btn:hover),
+.sellBtn:global(.ant-btn:focus),
+.sellBtn:global(.ant-btn:active),
+.sellBtn:global(.ant-btn.active) {
+  background: var(--mobile-trade-panel-red-color);
+}
+
+.holdBtn {
+  composes: btn;
+  background: var(--mobile-rate-zero-color);
+}
+
+.holdBtn:global(.ant-btn:hover),
+.holdBtn:global(.ant-btn:focus),
+.holdBtn:global(.ant-btn:active),
+.holdBtn:global(.ant-btn.active) {
+  background: var(--mobile-rate-zero-color);
+}
+
+/* drawWrapper */
+.drawWrapper {
+}
+
+.drawWrapper :global(.ant-drawer-content) {
+  max-width: 750px;
+  margin: auto;
+}
+
+.drawWrapper :global(.ant-drawer-body) {
+  padding: 0px;
+}
+
+/* slider */
+.drawWrapper :global(.ant-slider-handle) {
+  width: 22px;
+  height: 22px;
+  margin-top: -8px;
+  margin-left: -7px;
+  border-radius: 0px;
+}
+
+.drawWrapper :global(.ant-slider-handle)::before {
+  content: '';
+  position: absolute;
+  left: 12%;
+  top: 10%;
+  width: 25%;
+  height: 80%;
+  border-left: 1px solid var(--mobile-white-color);
+  border-right: 1px solid var(--mobile-white-color);
+}
+
+.drawWrapper :global(.ant-slider-handle)::after {
+  content: '';
+  position: absolute;
+  right: 12%;
+  top: 10%;
+  width: 25%;
+  height: 80%;
+  border-left: 1px solid var(--mobile-white-color);
+  border-right: 1px solid var(--mobile-white-color);
+}

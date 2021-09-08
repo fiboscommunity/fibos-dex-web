@@ -1,0 +1,215 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mobile-grey-color);
+}
+
+.formController {
+  display: flex;
+  background: var(--mobile-white-color);
+}
+
+.inputWrapper {
+  display: flex;
+  flex: 1;
+  padding: 10px 0px 10px 15px;
+}
+
+.input {
+}
+
+.input :global(.ant-input) {
+  border-radius: 13px;
+  background: #f6f6f8;
+  font-size: 12px;
+  color: #999999;
+}
+
+.addonWrapper {
+  min-width: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btnWrapper {
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cancelBtnWrapper {
+  composes: btnWrapper;
+  display: flex;
+  width: 90px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cancelBtn {
+  width: 50%;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex: 1 1;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+/* card */
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  background: var(--mobile-white-color);
+  margin-bottom: 5px;
+}
+
+.cardRow {
+  display: flex;
+}
+
+.cardRowWithBorder {
+  composes: cardRow;
+  border-bottom: 1px solid var(--mobile-select-token-border-color);
+}
+
+.text {
+  font-size: 15px;
+  color: var(--mobile-black-color);
+}
+
+.cardTitleWrapper {
+  composes: cardRow;
+  padding: 10px 15px 10px 15px;
+}
+
+.cardTitle {
+  composes: text;
+}
+
+.TokenWrapper {
+  composes: cardRowWithBorder;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.selectTokenLabel {
+  composes: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.selectTokenWrapper {
+  display: flex;
+}
+
+.selectTokenValue {
+}
+
+.pairWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.pair {
+  display: flex;
+  margin-right: 5px;
+}
+
+.symbol {
+  line-height: 15px;
+  font-size: 15px;
+  color: var(--mobile-table-text-black-color);
+}
+
+.contract {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--mobile-table-text-grey-color);
+}
+
+.toSelectWrapper {
+}
+
+.toSelect {
+  color: var(--mobile-select-token-icon-blue-color);
+}
+
+.amountWrapper {
+  composes: cardRowWithBorder;
+  justify-content: space-between;
+  padding: 15px;
+  padding-right: 5px;
+}
+
+.amountLabel {
+  composes: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.amountInputWrapper {
+}
+
+.amountInputWrapper :global(.ant-form-item) {
+  margin-bottom: 0px;
+}
+
+.amountInputWrapper :global(.ant-form-explain) {
+  min-height: 0px;
+}
+
+.amountInputWrapper
+  :global(.ant-form-item:not(.ant-form-item-with-help))
+  .amountInput
+  :global(.ant-input) {
+  border: none;
+}
+
+.amountInputWrapper .amountInput :global(.ant-input) {
+  outline: none;
+  box-shadow: none;
+  text-align: right;
+}
+
+.availableWrapper {
+  composes: cardRow;
+}
+
+.available {
+  composes: text;
+  height: 38px;
+  font-size: 13px;
+  padding: 10px 15px 10px 15px;
+  color: var(--mobile-select-token-grey-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cofirmBtnWrapper {
+  width: 100%;
+  display: flex;
+  padding: 20px 40px;
+}
+
+.cofirmBtn {
+  display: flex;
+  flex: 1 1;
+  height: 40px;
+}
+
+.cofirmBtn :global(span) {
+  display: flex;
+  flex: 1 1;
+  font-size: 17px;
+  justify-content: space-around;
+}

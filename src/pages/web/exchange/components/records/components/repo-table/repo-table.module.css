@@ -1,0 +1,221 @@
+.wrapper {
+  min-width: 1258px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+}
+
+.buy {
+  font-style: normal;
+  color: var(--green-color);
+}
+
+.sell {
+  font-style: normal;
+  color: var(--red-color);
+}
+
+.content :global(.ant-table-wrapper) {
+  width: 100%;
+}
+
+.tableWrapper {
+  width: 100%;
+}
+
+.pagination {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination
+  :global(.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon),
+.pagination
+  :global(.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon) {
+  font-size: 14px;
+  vertical-align: 0px;
+}
+
+.pagination
+  :global(.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis),
+.pagination
+  :global(.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis) {
+  font-size: 12px;
+  color: var(--text-white-color);
+}
+
+/* table */
+
+.table {
+  border-radius: 0px;
+  border: none;
+}
+
+.table :global(.ant-table table) {
+  border-radius: 0px;
+}
+
+.table :global(.ant-table-thead) {
+  border-radius: 0px;
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-thead > tr:first-child > th:first-child),
+.table :global(.ant-table-thead > tr:first-child > th:last-child) {
+  border-radius: 0px;
+  background-color: var(--darker-dark-color);
+  z-index: 100;
+  position: relative;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.table :global(tbody.ant-table-tbody > tr) {
+  background: var(--card-black-backgorund-color);
+}
+
+.table :global(tbody.ant-table-tbody > tr:nth-child(odd)) {
+  background: var(--middle-dark-color);
+}
+
+.table :global(.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td) {
+  background: var(--table-black-backgorund-color);
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-tbody > tr > td) {
+  height: 36px;
+  padding: 0px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  font-size: 14px;
+  color: var(--darker-grey-color);
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  font-size: 12px;
+  color: var(--text-white-color);
+}
+
+.table :global(.ant-table-thead > tr > th:first-child),
+.table :global(.ant-table-tbody > tr > td:first-child) {
+  padding-left: 43px;
+  text-align: left;
+}
+
+.table :global(table) {
+  table-layout: fixed;
+}
+
+.table
+  :global(.ant-table-thead
+    > tr
+    > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover) {
+  background: var(--darker-dark-color);
+}
+
+/* col width related */
+.table :global(.ant-table-tbody > tr > td) {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* no Data */
+.table :global(.ant-table-placeholder) {
+  background: var(--middle-dark-color);
+  border: none;
+}
+
+.table :global(.ant-table.ant-table-empty .ant-table-body) {
+  z-index: 100;
+  position: relative;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 100;
+}
+
+.table .noDataWrapper {
+  font-size: 14px;
+  color: var(--no-data-black-backgorund-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.noDataWrapper .noDataImgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.noDataWrapper .noDataImg {
+  width: 84px;
+  height: 109px;
+}
+
+.noDataWrapper .noDataText {
+  margin: 20px 0px 30px 0px;
+}
+
+/* spinning */
+.wrapper :global(.ant-spin-blur) {
+  opacity: 0.2;
+}
+
+.menuWrapper {
+}
+
+.menu {
+  background-color: transparent;
+  line-height: 25px;
+}
+
+.menu:global(.ant-menu-horizontal) {
+  border: none;
+}
+
+.menu :global(.ant-menu-item) {
+  font-size: 14px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--blue-color);
+  border: none;
+  transition: border-color 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.menu :global(.ant-menu-item:hover),
+.menu :global(.ant-menu-item-active:hover) {
+  color: var(--text-white-color);
+  border-color: var(--border-menu-border-black-color);
+  border: none;
+}
+
+.menu :global(.ant-menu-item.ant-menu-item-selected) {
+  color: var(--text-white-color);
+  border: none;
+}
+
+.menu :global(.ant-menu-item),
+.menu :global(.ant-menu-item.ant-menu-item-selected),
+.menu :global(.ant-menu-item:hover),
+.menu :global(.ant-menu-item-active:hover) {
+  border-right: 1px solid var(--border-menu-border-black-color);
+}
+
+.menu > .lastMenuItem,
+.menu > .lastMenuItem:global(.ant-menu-item.ant-menu-item-selected),
+.menu > .lastMenuItem:global(.ant-menu-item:hover),
+.menu > .lastMenuItem:global(.ant-menu-item-active:hover) {
+  border-right: none;
+}

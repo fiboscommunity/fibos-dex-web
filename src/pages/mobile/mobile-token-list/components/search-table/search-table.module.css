@@ -1,0 +1,238 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.pairWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.pair {
+  display: flex;
+}
+
+.searchWrapper {
+  height: 100%;
+  display: flex;
+}
+
+.search {
+  width: 160px;
+  height: 25px;
+  border-radius: 4px;
+  margin: 12px 32px;
+}
+
+.search :global(.ant-input) {
+  background-color: var(--darker-dark-color);
+  color: var(--text-white-color);
+  border: 1px solid var(--lightest-dark-color);
+}
+
+.search :global(.ant-input::-webkit-input-placeholder) {
+  color: var(--darker-grey-color);
+}
+
+.table :global(.ant-table-bordered.ant-table-empty .ant-table-placeholder) {
+  border: none;
+}
+
+.search :global(.ant-input-suffix .ant-input-search-icon) {
+  color: var(--darker-grey-color);
+  margin-top: 5px;
+}
+
+.tableWrapper {
+  /* box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.1); */
+  background-color: var(--mobile-white-color);
+}
+
+.table {
+  border-radius: 0px;
+  border: none;
+  padding: 0px 15px;
+  border-top: 1px solid var(--mobile-table-border-grey-color);
+}
+
+.table :global(.ant-table table) {
+  border-radius: 0px;
+  border: none;
+}
+
+.table :global(.ant-table-thead) {
+  border-radius: 0px;
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-thead > tr:first-child > th:first-child),
+.table :global(.ant-table-thead > tr:first-child > th:last-child) {
+  border-radius: 0px;
+  background-color: var(--mobile-white-color);
+  z-index: 100;
+  position: relative;
+  border: none;
+}
+
+.table :global(tbody.ant-table-tbody > tr) {
+  background: var(--mobile-white-color);
+}
+
+.table :global(tbody.ant-table-tbody > tr:nth-child(odd)) {
+  background: var(--mobile-white-color);
+}
+
+.table :global(.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td) {
+  background: var(--mobile-table-border-grey-color);
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-tbody > tr > td) {
+  padding: 0px;
+  text-align: center;
+  border: none;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  height: 25px;
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  height: 56px;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  font-size: 13px;
+  color: var(--mobile-table-head-grey-color);
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--mobile-black-color);
+  border-bottom: 1px solid var(--mobile-table-border-grey-color);
+}
+
+.table :global(.ant-table-tbody > tr:last-child > td) {
+  border-bottom: none;
+}
+
+.table :global(.ant-table-thead > tr > th:first-child),
+.table :global(.ant-table-tbody > tr > td:first-child) {
+  text-align: left;
+}
+
+.table :global(.ant-table-thead > tr > th:last-child),
+.table :global(.ant-table-tbody > tr > td:last-child) {
+  text-align: right;
+}
+
+.table :global(table) {
+  table-layout: fixed;
+}
+
+.table
+  :global(.ant-table-thead
+    > tr
+    > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover) {
+  background: var(--mobile-white-color);
+}
+
+.table
+  :global(.ant-table-thead
+    > tr
+    > th
+    .ant-table-header-column
+    .ant-table-column-sorters:hover::before) {
+  background: var(--mobile-white-color);
+}
+
+.table :global(.ant-table-thead > tr > th .ant-table-column-sorter) {
+  vertical-align: unset;
+}
+
+/* col width related */
+.table :global(.ant-table-tbody > tr > td) {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* no Data */
+.table :global(.ant-table-placeholder) {
+  background: var(--mobile-white-color);
+  border: none;
+}
+
+.table .noDataWrapper {
+  font-size: 15px;
+  color: var(--mobile-black-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.noDataWrapper .noDataImgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.noDataWrapper .noDataImg {
+  width: 84px;
+  height: 109px;
+}
+
+.noDataWrapper .noDataText {
+  margin: 20px 0px 30px 0px;
+}
+
+.rate {
+  font-size: 15px;
+  font-style: normal;
+  color: var(--mobile-white-color);
+  padding: 6px;
+  border-radius: 6px;
+  display: inline-flex;
+}
+
+.rateSymbol {
+  font-style: unset;
+  margin-right: 5px;
+  margin-top: -1px;
+}
+
+.rateNumber {
+  font-style: unset;
+}
+
+.rateZero {
+  composes: rate;
+  background-color: var(--mobile-rate-zero-color);
+}
+
+.rateDown {
+  composes: rate;
+  background-color: var(--mobile-trade-panel-red-color);
+}
+
+.rateUp {
+  composes: rate;
+  background: var(--mobile-trade-panel-green-color);
+}
+
+.symbol,
+.contract {
+  font-size: 12px;
+}
+
+.symbol.srctoken {
+  color: var(--mobile-table-text-black-color);
+}
+
+.symbol.dsttoken {
+  color: var(--mobile-table-text-grey-color);
+}

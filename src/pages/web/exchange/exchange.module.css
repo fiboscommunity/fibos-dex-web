@@ -1,0 +1,37 @@
+.wrapper {
+  min-width: 1280px;
+  padding: 6px 10px 6px 10px;
+}
+
+.contentTop {
+  display: flex;
+  margin: 0px auto;
+}
+
+.contentRow {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+.contentCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentBottom .contentRow:last-child {
+  margin-bottom: 0px;
+}
+
+.leftPanels {
+  flex: 1;
+}
+
+.rightPanel {
+  width: 265px;
+  display: flex;
+  flex-grow: 0;
+  background: var(--middle-dark-color);
+  margin-left: 7px;
+  margin-bottom: 9px;
+  margin-top: 36px;
+}

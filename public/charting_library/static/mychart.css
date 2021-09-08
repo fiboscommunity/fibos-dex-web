@@ -1,0 +1,44 @@
+.layout__area--center,
+.chart-page,
+.chart-page .chart-container,
+body,
+body.chart-page,
+.loading-indicator {
+  background-color: transparent;
+}
+
+.chart-page .chart-container {
+  border: 0px;
+}
+
+.wrap-3tiHesTk- > div {
+  background: #ffffff;
+}
+
+.chart-controls-bar-buttons.chart-series-controls > a {
+  background: #ffffff !important;
+}
+
+.chart-controls-bar {
+  background: #ffffff;
+}
+
+.layout__area--top .wrap-18oKCBRc-:hover {
+  background: #ffffff;
+}
+
+.layout__area--top .wrap-18oKCBRc-:hover span.rebutton {
+  color: white;
+}
+
+.header-chart-panel .button {
+  background: #181b2a;
+  border-color: #181b2a;
+  color: #616989;
+}
+
+.header-chart-panel .button.selected {
+  background: #262a41;
+  border-color: #262a41;
+  color: #616989;
+}

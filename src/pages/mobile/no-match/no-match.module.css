@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: var(--mobile-nofound-bg-color);
+  overflow-y: auto;
+}
+
+.img {
+  user-select: none;
+  pointer-events: none;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  background: var(--mobile-nofound-bg-color);
+}

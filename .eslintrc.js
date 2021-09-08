@@ -1,0 +1,28 @@
+module.exports = {
+  extends: 'airbnb',
+  globals: {
+    fetch: false,
+    window: false,
+    navigator: false,
+    document: false,
+  },
+  rules: {
+    semi: [2, 'never'],
+    'arrow-parens': 'off',
+    'operator-linebreak': 'off',
+    'no-underscore-dangle': 'off',
+    'object-curly-newline': 'off',
+    'react/prop-types': 'off',
+    'import/no-unresolved': 'on',
+    'import/no-extraneous-dependencies': 'off',
+    'react/jsx-closing-bracket-location': 'off',
+    'no-unused-vars': 'warn',
+    'import/named': 'warn',
+    'react/destructuring-assignment': 'warn',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'prefer-destructuring': ['error', { object: true, array: false }],
+  },
+  parser: 'babel-eslint',
+  plugins: ['react'],
+}

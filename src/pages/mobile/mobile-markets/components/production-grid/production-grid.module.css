@@ -1,0 +1,365 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text {
+  color: var(--mobile-black-color);
+}
+
+.titleText {
+  composes: text;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.titleTextTip {
+  composes: text;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.moreWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.more {
+  composes: text;
+  width: 88px;
+  height: 34px;
+  background-color: transparent;
+  color: var(--white-color);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.more:hover,
+.more:focus,
+.more:active {
+  background-color: transparent;
+}
+
+.gridWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardWrapper {
+  width: 345px;
+  height: 288px;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: var(--white-color);
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.cardWrapper > :global(div) {
+  flex: 1 1;
+  height: 100%;
+}
+
+.cardWrapper :global(.ant-spin-container > a) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardWrapper :global(.ant-spin-container) {
+  flex-direction: column;
+}
+
+.blankImg {
+}
+
+.cardHead {
+  display: flex;
+}
+
+.productionPicWrapper {
+  margin: 5px 5px 10px 5px;
+  width: 60%;
+  display: flex;
+}
+
+.productionPic {
+  width: auto;
+  max-width: 100%;
+  min-height: 160px;
+  max-height: 160px;
+  margin: auto;
+}
+
+.innerCard {
+  display: flex;
+  width: 40%;
+}
+
+.innerCardContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.innerCardWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.innerCardHead,
+.innerCardBlank {
+  composes: text;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-top: 8px;
+}
+
+.innerCardBody {
+  composes: text;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+  margin-bottom: 7px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px 10px 20px;
+}
+
+.cardBodyTitle {
+  composes: text;
+  height: 42px;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.cardBodyBlank {
+  composes: text;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cardBodyNameWrapper {
+  display: flex;
+  margin-top: 5px;
+}
+
+.label {
+  composes: text;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0;
+}
+
+.cardBodyNameLabel {
+  composes: label;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0;
+}
+
+.cardBodyName {
+  composes: text;
+  width: 174px;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0;
+  margin-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardBodyPriceWrapper {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardBodyPriceContent {
+  display: flex;
+}
+
+.cardBodyPriceLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 14px;
+  color: var(--black-color);
+  letter-spacing: 0;
+  min-width: 56px;
+}
+
+.cardBodyPrice {
+  composes: text;
+  font-size: 20px;
+  color: var(--mobile-trade-panel-red-color);
+  letter-spacing: 0;
+  margin-left: 15px;
+}
+
+.cardBodyPrice :global(em) {
+  font-size: 12px;
+  margin-left: 10px;
+  font-style: normal;
+}
+
+.innerCardBlank {
+  composes: text;
+}
+
+.cardBodyBlank {
+  composes: text;
+}
+
+/* single */
+.singleRow {
+  width: 100%;
+  display: flex;
+}
+
+.singleTitle {
+  font-size: 20px;
+  color: var(--white-color);
+  letter-spacing: 0;
+}
+
+.singleLabel {
+  font-size: 14px;
+  color: var(--production-card-grey);
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.singleValue {
+  font-size: 16px;
+  color: var(--white-color);
+  letter-spacing: 0;
+}
+
+.singleCardWrapper {
+  width: 100%;
+  margin: 30px 0px 50px 0px;
+}
+
+.singleCardLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.singleProductionPicWrapper {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.singleProductionPic {
+  width: auto;
+  height: 240px;
+  margin-right: 100px;
+}
+
+.singleCardRight {
+  width: 50%;
+}
+
+.singleCardTitle {
+  composes: singleTitle;
+}
+
+.singleCardNameRow {
+  composes: singleRow;
+  margin-top: 15px;
+}
+
+.singleCardNameRowLabel {
+  composes: label;
+  width: 120px;
+  color: var(--production-card-grey);
+  line-height: 24px;
+}
+
+.singleCardNameRowValue {
+  composes: singleValue;
+}
+
+.singleCardTokenValue {
+  composes: singleCardNameRowValue;
+  color: var(--production-single-card-grey);
+}
+
+.singleCardTokenValueSymbol {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--white-color);
+  letter-spacing: 0;
+}
+
+.singleCardPriceRow {
+  composes: singleRow;
+  margin-top: 15px;
+}
+
+.singleCardPriceRowLabel {
+  composes: singleCardNameRowLabel;
+}
+
+.singleCardPriceRowValue {
+  font-size: 20px;
+  color: var(--mobile-trade-panel-red-color);
+  letter-spacing: 0;
+}
+
+.singleCardButtonWrapper {
+  display: flex;
+  margin-top: 30px;
+}
+
+.singleCardButton {
+  width: 130px;
+  height: 45px;
+  background: var(--blue-color);
+  border-color: var(--blue-color);
+  border-radius: 4px;
+  color: var(--white-color);
+}

@@ -1,0 +1,194 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableWrapper :global(.ant-spin-container) {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  border-radius: 0px;
+  border: none;
+}
+
+.table :global(.ant-table table) {
+  border-radius: 0px;
+}
+
+.table :global(.ant-table-thead) {
+  border-radius: 0px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.table :global(.ant-table-thead > tr:first-child > th:first-child > span) {
+  border-left: 2px solid var(--blue-color);
+  padding-left: 15px;
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-thead > tr:first-child > th:first-child),
+.table :global(.ant-table-thead > tr:first-child > th:last-child) {
+  border-radius: 0px;
+  background-color: var(--darker-dark-color);
+  z-index: 100;
+  position: relative;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.table :global(tbody.ant-table-tbody > tr) {
+  background: var(--card-black-backgorund-color);
+}
+
+.table :global(tbody.ant-table-tbody > tr:nth-child(odd)) {
+  background: var(--middle-dark-color);
+}
+
+.table :global(.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td),
+.table :global(.ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td) {
+  background: var(--table-black-backgorund-color);
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-tbody > tr > td) {
+  height: 50px;
+  padding: 0px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  font-size: 14px;
+  color: var(--darker-grey-color);
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  font-size: 12px;
+  color: var(--text-white-color);
+}
+
+.table :global(.ant-table-thead > tr > th:first-child),
+.table :global(.ant-table-tbody > tr > td:first-child) {
+  padding-left: 15px;
+  text-align: left;
+}
+
+.table :global(.ant-table-thead > tr:first-child > th:first-child) {
+  padding-left: 0px;
+}
+
+.table :global(table) {
+  table-layout: fixed;
+}
+
+.table
+  :global(.ant-table-thead
+    > tr
+    > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover) {
+  background: var(--darker-dark-color);
+}
+
+/* col width related */
+.table :global(.ant-table-tbody > tr > td) {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* no Data */
+.table :global(.ant-table-placeholder) {
+  background: var(--middle-dark-color);
+  border: none;
+}
+
+.table :global(.ant-table.ant-table-empty .ant-table-body) {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.table .noDataWrapper {
+  font-size: 14px;
+  color: var(--no-data-black-backgorund-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.noDataWrapper .noDataImgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.noDataWrapper .noDataImg {
+  width: 84px;
+  height: 109px;
+}
+
+.noDataWrapper .noDataText {
+  margin: 20px 0px 30px 0px;
+}
+
+.rateDown {
+  font-style: normal;
+  color: var(--red-color);
+}
+
+.rateUp {
+  font-style: normal;
+  color: var(--green-color);
+}
+
+.buyBtn:global(.ant-btn) {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0px;
+  height: auto;
+  font-size: 12px;
+  color: var(--blue-color);
+  letter-spacing: 0;
+}
+
+.buyBtn:global(.ant-btn > span) {
+  text-decoration: underline;
+}
+
+.buyBtn:global(.ant-btn:hover),
+.buyBtn:global(.ant-btn:focus),
+.buyBtn:global(.ant-btn:active) {
+  color: var(--blue-color);
+}
+
+.buyBtn:global(.ant-btn::after) {
+  display: none;
+  box-shadow: none;
+}
+
+/* pagination */
+.pagination {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination
+  :global(.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon),
+.pagination
+  :global(.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon) {
+  font-size: 14px;
+  vertical-align: 0px;
+}
+
+.pagination
+  :global(.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis),
+.pagination
+  :global(.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis) {
+  font-size: 12px;
+  color: var(--text-white-color);
+}

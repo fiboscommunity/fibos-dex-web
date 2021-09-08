@@ -1,0 +1,75 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headWrapper {
+  display: flex;
+  padding-right: 46px;
+  background: var(--mobile-white-color);
+  box-shadow: 0 2px 4px 0 #f2efff;
+  z-index: 2;
+}
+
+.headWrapper.withSuffix {
+  padding-right: 0px;
+}
+
+.backWrapper {
+  display: flex;
+}
+
+.back {
+  width: 46px;
+  padding: 14px 16px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.title {
+  margin: auto;
+  line-height: 42px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex: 1 1;
+  overflow-y: auto;
+}
+
+.pairWrapper {
+  display: flex;
+}
+
+.pair {
+  display: flex;
+}
+
+.symbol {
+  line-height: 15px;
+  font-size: 15px;
+  color: var(--mobile-table-text-black-color);
+}
+
+.contract {
+  line-height: 15px;
+  font-size: 12px;
+  color: var(--mobile-table-text-grey-color);
+}
+
+.suffixWrapper {
+  display: flex;
+}
+
+.suffixClearfix,
+.suffixWrapper > :global(a) {
+  width: 42px;
+  height: 42px;
+  padding: 11px 16px;
+}

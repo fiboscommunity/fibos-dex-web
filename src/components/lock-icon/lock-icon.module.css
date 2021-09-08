@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* Locked */
+.lock {
+  width: 12px;
+  height: 8px;
+  border: 1px solid var(--locked-color);
+  position: relative;
+  cursor: default;
+  transition: all 0.3s ease-in-out;
+}
+
+.lock:after {
+  /* content: ''; */
+  display: block;
+  background: var(--locked-color);
+  width: 3px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.5px 0 0 -1.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.lock:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 6px;
+  bottom: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -4px;
+  border: 1px solid var(--locked-color);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Locked Hover */
+.lock:hover:before {
+  /* height: 8px; */
+}
+
+/* Unlocking */
+.unlocking {
+  /* transform: rotate(10deg); */
+}
+
+.unlocking:before {
+  height: 6px;
+  bottom: 123%;
+  left: 31%;
+  margin-left: -4.5px;
+  transform: rotate(-45deg);
+}
+
+.unlocking:hover:before {
+  /* height: 6px; */
+}
+
+.unlocking,
+.unlocking:before {
+  border-color: var(--unlocking-color);
+}
+
+.unlocking:after {
+  background: var(--unlocking-color);
+}
+
+/* Unlocking Hover */
+.unlocking:hover {
+  /* transform: rotate(3deg); */
+}
+
+.unlocking:hover:before {
+  /* height: 6px;
+  left: 40%;
+  bottom: 124%;
+  transform: rotate(-30deg); */
+}
+
+/* Unlocked */
+.unlocked {
+  /* transform: rotate(10deg); */
+}
+
+.unlocked:before {
+  height: 6px;
+  bottom: 123%;
+  left: 31%;
+  margin-left: -4.5px;
+  transform: rotate(-45deg);
+}
+
+.unlocked:hover:before {
+  height: 6px;
+}
+
+.unlocked,
+.unlocked:before {
+  border-color: var(--unlocked-color);
+}
+
+.unlocked:after {
+  background: var(--unlocked-color);
+}
+
+/* Unlocked Hover */
+.unlocked:hover {
+  /* transform: rotate(3deg); */
+}
+
+.unlocked:hover:before {
+  /* height: 6px;
+  left: 50%;
+  bottom: 124%;
+  transform: rotate(0deg); */
+}

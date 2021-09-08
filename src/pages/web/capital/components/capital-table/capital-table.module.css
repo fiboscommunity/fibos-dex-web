@@ -1,0 +1,279 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper :global(::-webkit-scrollbar-track) {
+  background: #fff !important;
+}
+:global(.ant-select-dropdown) :global(::-webkit-scrollbar-track) {
+  background: #fff !important;
+}
+.tableWrapper :global(.ant-spin-container) {
+  display: flex;
+  flex-direction: column;
+}
+
+.expandedForm {
+  border: 1px solid #eeeeee;
+  padding: 20px;
+}
+
+.expandedForm :global(.ant-form-explain) {
+  float: right;
+}
+
+.table {
+  border-radius: 0px;
+  border: none;
+}
+
+.table :global(.ant-table table) {
+  border-radius: 0px;
+}
+
+.table :global(.ant-table-thead) {
+  border-radius: 0px;
+}
+
+.table :global(.ant-table-thead > tr:first-child > th:first-child > span) {
+  border-left: 2px solid var(--blue-color);
+  padding-left: 15px;
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
+}
+.table :global(.ant-table-thead > tr:last-child > th:last-child > span) {
+  padding-right: 15px;
+  width: 100%;
+  text-align: right;
+  line-height: 20px;
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-thead > tr:first-child > th:first-child),
+.table :global(.ant-table-thead > tr:first-child > th:last-child) {
+  border-radius: 0px;
+  background-color: var(--white-color);
+  z-index: 100;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+.table :global(.ant-table-thead > tr > th),
+.table :global(.ant-table-tbody > tr > td) {
+  height: 50px;
+  padding: 0px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.table :global(.ant-table-thead > tr > th) {
+  font-size: 14px;
+}
+
+.table :global(.ant-table-tbody > tr > td) {
+  font-size: 12px;
+}
+
+.table :global(.ant-table-thead > tr > th:first-child),
+.table :global(.ant-table-tbody > tr > td:first-child) {
+  padding-left: 15px;
+  text-align: left;
+}
+
+.table :global(.ant-table-thead > tr > th:last-child),
+.table :global(.ant-table-tbody > tr > td:last-child) {
+  padding-right: 15px;
+  text-align: right;
+}
+
+.table :global(.ant-table-thead > tr:first-child > th:first-child) {
+  padding-left: 0px;
+}
+
+.table :global(table) {
+  table-layout: fixed;
+}
+
+.table :global(tbody.ant-table-tbody > tr) {
+  background: #fff;
+}
+.table :global(.ant-table-expanded-row > td) {
+  text-align: left !important;
+}
+
+/* col width related */
+.table :global(.ant-table-tbody > tr > td) {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* no Data */
+.table :global(.ant-table-placeholder) {
+  border: none;
+}
+
+.noDataWrapper .noDataImgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.noDataWrapper .noDataImg {
+  width: 84px;
+  height: 109px;
+}
+
+.noDataWrapper .noDataText {
+  margin: 20px 0px 30px 0px;
+}
+
+.detailBtn:global(.ant-btn) {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0px;
+  height: auto;
+  font-size: 14px;
+  color: var(--blue-color);
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.detailBtn:global(.ant-btn > span) {
+  text-decoration: none;
+}
+
+.detailBtn:global(.ant-btn:hover),
+.detailBtn:global(.ant-btn:focus),
+.detailBtn:global(.ant-btn:active) {
+  color: var(--blue-color);
+}
+
+.detailBtn:global(.ant-btn::after) {
+  display: none;
+  box-shadow: none;
+}
+
+.detailBtn {
+  margin-left: 40px;
+}
+
+.expandedFormContainer {
+  height: 100%;
+  margin: 20px 50px;
+  width: 500px;
+}
+
+.ethAddressGroup {
+  margin-top: 10px;
+  padding: 0 20px 0 0;
+  width: auto;
+  color: #333333;
+  text-align: left;
+  font-size: 16px;
+  display: inline-block;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.ethAddressRadio {
+  line-height: 40px;
+  display: block;
+  width: 100%;
+}
+
+.ethAddressName {
+  font-size: 14px;
+  color: #333333;
+}
+
+.ethAddressName > div:first-child {
+  display: inline;
+}
+
+.imtokenTip > img {
+  margin: 0 15px;
+}
+
+.crossfoLogo {
+  display: inline;
+  margin: 0 5px;
+  font-size: 16px;
+  color: #333333 !important;
+  text-align: right;
+}
+.crossfoLogo:hover {
+  color: #000;
+}
+
+.formTitle {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.inputRow {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.expandedForm :global(.ant-form-horizontal) {
+  width: 570px;
+}
+
+.inputTip {
+  margin-top: -25px;
+  font-size: 12px;
+  color: #999999;
+}
+
+.feeTip {
+  font-size: 12px;
+  color: #999999;
+}
+
+.submitBtn {
+  margin-top: 15px;
+}
+.chargeModal {
+  width: 320px !important;
+}
+
+.qrcode {
+  display: block;
+  height: 168px !important;
+  width: 168px !important;
+  margin: 31px auto 18px auto;
+}
+
+.chargeTips > div {
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.addressModal {
+  width: 620px !important;
+}
+
+.addressModal .detailBtn {
+  float: right;
+}
+
+.countDown {
+  font-size: 14px !important;
+}
+
+.countDown > div {
+  display: inline;
+  color: #4e87ff;
+}
+
+.imtokenTip {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999999;
+}

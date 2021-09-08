@@ -1,0 +1,399 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.rowCard {
+  composes: row;
+  flex-direction: column;
+  background-color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.wrapper .rowCard:last-child {
+  margin-bottom: 0px;
+}
+
+.title {
+  font-size: 20px;
+  color: var(--black-color);
+  letter-spacing: 0;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--grey-for-light-color);
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.remarkLabel {
+  composes: label;
+  justify-content: flex-start;
+}
+
+.value {
+  font-size: 16px;
+  color: var(--black-color);
+  letter-spacing: 0;
+}
+
+/* chartWrapper */
+.chartWrapper {
+  composes: rowCard;
+}
+
+.radioWrapper {
+  composes: rowCard;
+  padding: 15px;
+}
+
+.radioGroup {
+}
+
+.radioButton,
+.radioButton:first-child {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+  width: 50%;
+  text-align: center;
+}
+
+.radioButton:hover,
+.radioButton:focus,
+.radioButton:active {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.radioButton:global(.ant-radio-button-wrapper-checked) {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.chartWrapperContent {
+  width: 100%;
+  height: 250px;
+  padding: 0px 10px;
+  display: flex;
+  flex: 1;
+}
+
+.chartWrapper {
+  composes: row;
+  width: 100%;
+  height: 100%;
+}
+
+/* infoGrid */
+.infoGrid {
+  composes: rowCard;
+  padding: 0px 10px;
+}
+
+.infoGridTitle {
+  composes: title;
+  margin-top: 10px;
+}
+
+.infoGridTitleTip {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoGridTitleTipText {
+  margin-top: 5px;
+  font-size: 14px;
+  color: var(--normal-grey-color);
+  letter-spacing: 0;
+  margin-right: 30px;
+}
+
+.infoGridGrid {
+  min-width: 66%;
+  display: flex;
+  padding: 20px 0px;
+}
+
+.infoGridGridEleLeft {
+  width: 50%;
+  border-right: 1px dashed var(--grey-for-light-color);
+}
+
+.infoGridGridEleLeftLabel {
+  font-size: 12px;
+  color: var(--grey-for-light-color);
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.infoGridGridEleLeftValue {
+  font-size: 28px;
+  color: var(--black-color);
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.infoGridGridEleRight {
+  width: 50%;
+}
+
+.infoGridGridEleRightLabel {
+  composes: infoGridGridEleLeftLabel;
+}
+
+.infoGridGridEleRightValue {
+  composes: infoGridGridEleLeftValue;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoGridGridEleRightValueAddon {
+  font-size: 14px;
+  color: var(--grey-for-light-color);
+  font-style: normal;
+}
+
+.infoGridNameRow {
+  composes: row;
+  margin-top: 15px;
+}
+
+.infoGridNameRowLabel {
+  composes: label;
+  width: 75px;
+}
+
+.infoGridNameRowValue {
+  composes: value;
+}
+
+.infoGridTokenValue {
+  composes: infoGridNameRowValue;
+  color: var(--normal-grey-color);
+}
+
+.infoGridTokenValueSymbol {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--black-color);
+  letter-spacing: 0;
+}
+
+.infoGridTokenValueAddontext {
+  font-style: normal;
+  font-size: 14px;
+  color: var(--grey-for-light-color);
+  letter-spacing: 0;
+  background: var(--blue-color) 1a;
+  border-radius: 3px;
+  padding: 2px 0px 2px 15px;
+  text-align: right;
+}
+
+.infoGridNameRowRecord {
+}
+
+.infoGridPriceRow {
+  composes: row;
+  margin-top: 15px;
+}
+
+.infoGridPriceRowLabel {
+  composes: infoGridNameRowLabel;
+}
+
+.infoGridPriceRowValue {
+  font-size: 20px;
+  color: var(--mobile-trade-panel-red-color);
+  letter-spacing: 0;
+}
+
+.infoGridDeadlineRow {
+  composes: row;
+}
+
+.infoGridDeadlineRowLabel {
+  width: 100px;
+  font-size: 14px;
+  color: var(--normal-grey-color);
+  letter-spacing: 0;
+}
+
+.infoGridDeadlineRowValue {
+  composes: infoGridDeadlineRowLabel;
+  width: auto;
+}
+
+.infoGridDeadlineRowLink {
+  font-size: 14px;
+  color: var(--blue-color);
+  letter-spacing: 0;
+  margin-left: 10px;
+}
+
+/* infos */
+.infos {
+  composes: rowCard;
+}
+
+.infoTitle {
+  composes: title;
+  padding: 15px;
+}
+
+.infoRow {
+  composes: row;
+  margin-bottom: 15px;
+}
+
+.infos .infoRow:last-child {
+  margin-bottom: 0px;
+}
+
+.infoRowLabel {
+  composes: label;
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  word-break: keep-all;
+}
+
+.infoRowValue {
+  composes: value;
+  margin-left: 10px;
+}
+
+.infoRowValueWithAddon {
+  composes: infoRowValue;
+}
+
+.infoRowValueAddon {
+  composes: value;
+  margin-left: 100px;
+  font-style: normal;
+}
+
+.infoRowTableWrapper {
+  width: 100%;
+}
+
+.infoRowTableLabel {
+  composes: infoRowLabel;
+  width: 100%;
+}
+
+.infoRowTable {
+  composes: infoRow;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.infoRowTable :global(.ant-table) {
+  background-color: var(--inner-table-backgorund-color);
+}
+
+.infoRowTable
+  :global(.ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body) {
+  background-color: transparent;
+}
+
+/* no Data */
+.infoRowTable :global(.ant-table-placeholder) {
+  border: none;
+  background-color: var(--inner-table-backgorund-color);
+}
+
+.infoRowTable :global(.ant-table.ant-table-empty .ant-table-body) {
+  z-index: 100;
+  position: relative;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 100;
+}
+
+.infoRowTable .noDataWrapper {
+  font-size: 14px;
+  color: var(--no-data-black-backgorund-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.noDataWrapper .noDataImgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.noDataWrapper .noDataImg {
+  width: 84px;
+  height: 109px;
+}
+
+.noDataWrapper .noDataText {
+  margin: 20px 0px 30px 0px;
+}
+
+.infoText {
+  composes: value;
+  padding: 0px 15px 15px 15px;
+}
+
+.infoRowLink {
+  flex-direction: column;
+}
+
+.infoRowLinkLabel {
+  composes: label;
+  width: 100px;
+}
+
+.infoRowLinkRow {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px 10px 15px;
+}
+
+.infoRowLinkRowLabel {
+  color: var(--no-data-black-backgorund-color);
+}
+
+.infoRowLinkRowValue {
+}
+
+.infoRowLink {
+  composes: value;
+  font-size: 14px;
+  color: var(--blue-color);
+  letter-spacing: 0;
+}
+
+.wrapper :global(::-webkit-scrollbar) {
+  width: 10px;
+}
+
+.wrapper :global(::-webkit-scrollbar-thumb) {
+  border-radius: 7px;
+  background: var(--scrollbar-thumb-for-light-color);
+}
+
+.wrapper :global(::-webkit-scrollbar-track) {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: var(--white-color);
+}

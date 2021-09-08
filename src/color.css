@@ -1,0 +1,85 @@
+body.dark {
+  --white-color: #ffffff;
+  --black-color: #333333;
+  --real-black-color: #000000;
+  --blue-color: #4e87ff;
+
+  --normal-grey-color: #666666;
+  --grey-color: #dfe4ff;
+  --lighter-grey-color: #ecf5ff;
+
+  --grey-for-light-color: #999999;
+  --grey-with-opacity-color: #dfe4ff80;
+  --darker-grey-color: #616989;
+  --green-color: #41b37d;
+  --red-color: #d74e5a;
+
+  --darker-dark-color: #1b1e2d;
+  --middle-dark-color: #181b2a;
+  --lighter-dark-color: #262a42;
+  --lightest-dark-color: #4e5b85;
+
+  --text-white-color: var(--grey-color);
+  --text-white-with-opacity-color: var(--grey-with-opacity-color);
+
+  --scrollbar-thumb-color: #616161;
+  --scrollbar-thumb-for-light-color: #b4b4b4;
+
+  --locked-color: var(--green-color);
+  --unlocking-color: var(--red-color);
+  --unlocked-color: var(--darker-grey-color);
+
+  --modal-black-backgorund-color: #222636;
+  --card-black-backgorund-color: #1d2236;
+  --table-black-backgorund-color: #2c334a;
+  --inner-table-backgorund-color: #f5faff;
+  --no-data-black-backgorund-color: #3f414c;
+
+  --drop-down-disabled-item-color: #202123;
+  --drop-down-item-color: #626c92;
+
+  --input-grey-color: #bfbfbf;
+  --input-black-color: #20263d;
+
+  --ticker-grey-color: #7e88b4;
+
+  --mask-grey-color: #a9aebf;
+
+  --border-menu-border-black-color: #3a4267;
+
+  --contact-lighter-grey-text-color: #d3d3d3;
+  --contact-grey-text-color: #7a7a7a;
+
+  --production-card-grey: #d8d6d6;
+  --production-single-card-grey: #c1c1c1;
+
+  --readme-card-grey: #d8d8d8;
+
+  --switch-grey-color: #7b7b7b;
+
+  --float-menu-shadow-color: #4e87ff80;
+  --float-menu-backgorund-color: rgba(255,255,255,0.80);
+
+  --mobile-black-color: var(--real-black-color);
+  --mobile-white-color: var(--white-color);
+  --mobile-grey-color: #f5f5f6;
+  --mobile-darker-grey-color: #f6f6f8;
+
+  --mobile-table-head-grey-color: #999999;
+  --mobile-table-border-grey-color: #eeeeee;
+  --mobile-table-text-black-color: var(--mobile-black-color);
+  --mobile-table-text-grey-color: #b8b8b8;
+
+  --mobile-rate-zero-color: #c8c8c8;
+
+  --mobile-nofound-bg-color: #262a42;
+
+  --mobile-select-token-grey-color: #999999;
+  --mobile-select-token-border-color: #eeeeee;
+  --mobile-select-token-icon-blue-color: #3574fa;
+  --mobile-table-disabled-grey-color: #f5f5f5;
+
+  --mobile-trade-panel-red-color: #ed6760;
+  --mobile-trade-panel-green-color: #4db871;
+  --mobile-trade-panel-grey-color: #f1f1f1;
+}

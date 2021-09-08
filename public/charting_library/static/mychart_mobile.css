@@ -1,0 +1,83 @@
+.layout__area--center,
+.chart-page,
+.chart-page .chart-container,
+body,
+body.chart-page,
+.loading-indicator {
+  background-color: transparent;
+}
+
+.chart-page .chart-container {
+  border: 0px;
+}
+
+.wrap-3tiHesTk- > div {
+  background: #ffffff;
+}
+
+.chart-controls-bar-buttons.chart-series-controls > a {
+  background: #ffffff !important;
+}
+
+.chart-controls-bar {
+  background: #ffffff;
+}
+
+.layout__area--top .wrap-18oKCBRc-:hover {
+  background: #ffffff;
+}
+
+.layout__area--top .wrap-18oKCBRc-:hover span.rebutton {
+  color: white;
+}
+
+.header-chart-panel .group {
+  height: 20px;
+}
+
+.header-chart-panel .button {
+  background: #f6f6f8;
+  border-color: transparent;
+  color: #b8b8b8;
+  padding: 0px;
+}
+
+.header-chart-panel .group.header-group-indicators .button {
+  padding: 2px 0px 0px 2px;
+}
+
+.header-chart-panel
+  .group.space-single:not(.header-group-properties):not(.header-group-indicators):not(.header-group-fullscreen)
+  .button {
+  background: #f6f6f8;
+  border-color: transparent;
+  color: #b8b8b8;
+  padding: 2px 4px;
+}
+
+.header-chart-panel
+  .group.space-single:not(.header-group-properties):not(.header-group-indicators):not(.header-group-fullscreen)
+  .button
+  span {
+  line-height: 14px;
+}
+
+.header-chart-panel .button.fullscreen {
+  padding: 0px;
+}
+
+.header-chart-panel .button.fullscreen span {
+  padding: 0px;
+}
+
+.header-chart-panel .fullscreen svg {
+  width: 16px;
+  height: 16px;
+  margin: 1px 0px 0px 2px;
+}
+
+.header-chart-panel .button.selected {
+  background: #999999 !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}

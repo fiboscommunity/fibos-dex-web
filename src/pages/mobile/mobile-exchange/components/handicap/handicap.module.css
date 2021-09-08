@@ -1,0 +1,171 @@
+.wrapper {
+  width: 100%;
+}
+
+.contentWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--mobile-white-color);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+.sellContent {
+  composes: content;
+  max-width: 50%;
+}
+
+.buyContent {
+  composes: content;
+  max-width: 50%;
+}
+
+.bodyWrapper {
+  display: flex;
+}
+
+.contentRow {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.sellContent .contentRow {
+  flex-direction: row-reverse;
+}
+
+.contentRow:hover {
+  background: var(--mobile-grey-color);
+}
+
+.tipRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  flex-direction: column;
+}
+
+.rowText {
+  margin: 5px 0px;
+  color: var(--mobile-black-color);
+  font-size: 12px;
+}
+
+.contentRow .rowText {
+  width: 50%;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.titleWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.titleWrapper em {
+  margin: 0px 5px;
+}
+
+.titleHead {
+  composes: rowText;
+  width: 33%;
+  text-align: left !important;
+  color: var(--mobile-table-text-grey-color);
+}
+
+.titleBody {
+  composes: rowText;
+  width: 33%;
+  padding-right: 5px;
+  text-align: center !important;
+  color: var(--mobile-table-text-grey-color);
+}
+
+.titleFooter {
+  composes: rowText;
+  width: 33%;
+  text-align: right !important;
+  color: var(--mobile-table-text-grey-color);
+}
+
+.rowColorBg {
+  position: absolute;
+  top: 3px;
+  width: 0px;
+  height: 24px;
+  opacity: 0.1;
+  background-color: transparent;
+}
+
+.sellContent .contentRow .rowColorBg {
+  left: 0px;
+}
+
+.buyContent .contentRow .rowColorBg {
+  right: 0px;
+}
+
+.rowPrice {
+  composes: rowText;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0px;
+  text-align: right !important;
+}
+
+.buyContent .contentRow .rowPrice {
+  text-align: right !important;
+}
+
+.sellContent .contentRow .rowPrice {
+  text-align: left !important;
+}
+
+.rowAmount {
+  composes: rowText;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0px;
+  padding-right: 5px;
+}
+
+.buyContent .contentRow .rowAmount {
+  text-align: left !important;
+}
+
+.sellContent .contentRow .rowAmount {
+  text-align: right !important;
+}
+
+/* spinning */
+.wrapper :global(.ant-spin-blur) {
+  opacity: 0.2;
+}
+
+.buy {
+  font-style: normal;
+  color: var(--mobile-trade-panel-green-color);
+}
+
+.sell {
+  font-style: normal;
+  color: var(--mobile-trade-panel-red-color);
+}
